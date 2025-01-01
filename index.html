@@ -30,7 +30,16 @@
 			.card{
 				border: none;
 			}
-			.social-media > a{
+			.testimonial-card{
+				height: 25rem;
+			}
+			.testimonial-img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				object-fit: cover;
+			}
+			.no-dec-link > a{
 				text-decoration: none;
 			}
 		</style>
@@ -82,6 +91,28 @@
 				<p class="text-muted">A little bit</p>
 				<h2 class="fw-bold">About Me</h2>
 			</div>
+			<div class="row">
+				<div class="col-lg-9 mx-auto d-block">
+					<p class="mb-4 lead"><span class="text-primary display-5">
+						W</span>elcome! My name is <span class="text-primary">Tom Lindblad</span> and I am an aspiring front-end developer, 
+						and you're lucky you just caught me in the beginning of my exciting new journey! </p>
+				
+					<p class="mb-4 lead">
+						I've been coding on my own for a couple of years, mostly in C# making games with Unity, 
+						but in 2024 I grabbed life by the nutsack and applied for a real course in front-end development at <span class="text-primary">Sundsgårdens folkhögskola</span>. 
+						And O'boy did the planets align.</p>
+
+					<p class="mb-4 lead">
+						Since then I've been in a frenzy to learn everything and anything I can get my hands on about <span class="text-primary">HTML</span>, 
+						<span class="text-primary">CSS</span>, <span class="text-primary">JavaScript</span> and more. 
+					</p>
+
+					<p class="lead no-dec-link">
+						So take a peek at some of my <a href="#projects">projects</a> or see what others have to say <a href="#testimonials">about me</a>, 
+						and don't be afraid to <a href="#contact">give me a holla</a> if you got something one your mind! Peace! <p class="lead text-end">//Tom Lindblad</p>
+					</p>
+				</div>
+			</div>
 			<div class="row g-4">
 				<div class="col-md-4">
 					<div class="card h-100 p-4">
@@ -89,7 +120,7 @@
 							<i class="bi bi-lightning"></i>
 						</div>
 						<h4>Lightning fast</h4>
-						<p class="text-muted">I use an agile workflow that gets thing done and get them done good.</p>
+						<p class="text-muted">I use an agile workflow that gets thing done fast and are always prepared for changes.</p>
 					</div>
 				</div>
 
@@ -109,7 +140,7 @@
 							<i class="bi bi-book"></i>
 						</div>
 						<h4>Eager to learn</h4>
-						<p class="text-muted">I learn things fast and is always interested to expand my knowledge </p>
+						<p class="text-muted">I learn things fast and I'm always interested to expand my knowledge. </p>
 					</div>
 				</div>
 
@@ -129,7 +160,7 @@
 				<div class="col-lg">
 					<div class="card project-card bg-light h-100">
 						<img class="card-img-top" src="images/bhormaon2.png" alt="A front-end developer">							
-						<div class="card-body">
+						<div class="card-body shadow">
 							<h5 class="card-title">Bhormaon</h5>
 							<p>A homepage made in under 12h as a part of Sundsgårdens front-end developer course.</p>
 							<ul>
@@ -139,7 +170,7 @@
 								<li>Sass</li>
 							</ul>
 							<button class="btn btn-primary btn-sm"><i class="bi bi-link"></i> See page</button>
-							<button class="btn btn-primary btn-sm"><i class="bi bi-github"></i> Github</button>
+							<a href="https://github.com/TomLindblad/ass14-testYourSkills" target="_blank"><button class="btn btn-primary btn-sm"><i class="bi bi-github"></i> Github</button></a>
 						</div>
 					</div>
 				</div>
@@ -147,7 +178,7 @@
 				<div class="col-lg">
 					<div class="card project-card bg-light h-100">
 						<img class="card-img-top" src="images/rockpapersissors.png" alt="A front-end developer">
-						<div class="card-body">
+						<div class="card-body shadow">
 							<h5 class="card-title">Rock, paper, sissors</h5>
 							<p>A simple game I made just to challenge myself when I started to learn JavaScript.</p>
 							<ul>
@@ -157,7 +188,7 @@
 								<li></li>
 							</ul>
 							<button class="btn btn-primary btn-sm"><i class="bi bi-link"></i> See page</button>
-							<button class="btn btn-primary btn-sm"><i class="bi bi-github"></i> Github</button>
+							<a href="https://github.com/TomLindblad/RockPaperScissor" target="_blank"><button class="btn btn-primary btn-sm"><i class="bi bi-github"></i> Github</button></a>
 						</div>
 					</div>
 				</div>
@@ -177,8 +208,72 @@
 	<section id="testimonials" class="py-5">
 		<div class="container py-5">
 			<div class="text-center mb-5">
-				<p class="text-muted">Still not conviced? </p>
-				<h2 class="fw-bold">Let's see what others have to say!</h2>
+				<p class="text-muted">Still not convinced? </p>
+				<h2 class="fw-bold pb-5">Let's see what others have to say!</h2>
+				<div class="mx-auto d-block">
+					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner ">
+
+							<div class="carousel-item active mt-5 testimonial-card">
+								<div class="card mx-auto d-block mt-5" style="width: 18rem;">
+									<div class="d-flex align-items mb-3">
+										<img src="images/face (1).jpg" class="testimonial-img" alt="...">
+										<div class="m-4">
+											<h5 class="card-title mb-0">Lorem Lorem</h5>
+											<small class="text-muted">Old man banana</small>
+										</div>
+									</div>	
+									<div class="card-body bg-light text-start pb-4">
+										<i class="bi bi-quote text-primary display-6"></i>
+										<p class="card-text px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											 Molestiae dolorum omnis dolore! Voluptatibus impedit officia hic perspiciatis fugit.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item mt-5 testimonial-card">
+								<div class="card mx-auto d-block mt-5" style="width: 18rem;">
+									<div class="d-flex align-items mb-3">
+										<img src="images/face (2).jpg" class="testimonial-img" alt="...">
+										<div class="m-4">
+											<h5 class="card-title mb-0">No one</h5>
+											<small class="text-muted">My imagination</small>
+										</div>
+									</div>	
+									<div class="card-body bg-light text-start pb-4">
+										<i class="bi bi-quote text-primary display-6"></i>
+										<p class="card-text px-4 mb-0">Tom's work is cool. It is nothing but cool. I wish I was as good as Tom. He is my hero.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item mt-5 testimonial-card">
+								<div class="card mx-auto d-block mt-5" style="width: 18rem;">
+									<div class="d-flex align-items mb-3">
+										<img src="images/john.jpg" class="testimonial-img" alt="...">
+										<div class="m-4">
+											<h5 class="card-title mb-0">John Lindblad</h5>
+											<small class="text-muted">My brother</small>
+										</div>
+									</div>	
+									<div class="card-body bg-light text-start pb-4">
+										<i class="bi bi-quote text-primary display-6"></i>
+										<p class="card-text px-4">okej </p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						<span class="text-primary display-6" aria-hidden="true"><i class="bi bi-caret-left"></i></span>
+						<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						<span class="text-primary display-6" aria-hidden="true"><i class="bi bi-caret-right"></i></span>
+						<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -226,7 +321,7 @@
 					<p>© 2025 Tom Lindblad. All rights reserved.</p>
 				</div>
 				<div class="col-md-6 text-md-end">
-					<div class="social-media">
+					<div class="no-dec-link">
 						<a class="text-white" href="https://github.com/TomLindblad/">
 							<i class="bi bi-github"></i>
 						</a>
