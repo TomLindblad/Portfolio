@@ -1,0 +1,186 @@
+body{
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient( rgb(201, 219, 152),rgb(1, 44, 1) )
+}
+
+p{
+    text-align: center;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 500;
+    width: 100%;
+    font-size: 20px;
+}
+
+.text{
+    width: 33.33%;
+}
+
+.gameboard{
+    max-width:900px;
+    width: 100%;
+    height: 600px;
+    border: 5px solid black;
+    border-radius:  20px;
+    background-color: bisque;
+    padding: 10px 0px;
+} 
+
+.enemycardcontainer{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#enemycard:hover{
+    animation: shakeshake;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    cursor: not-allowed;
+}
+
+.textcontainer{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.mycardcontainer{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+.cardcolor{
+    background-color: rgb(230, 230, 134);
+}
+
+.win{
+    background-color: rgb(13, 209, 62);
+}
+
+.lose{
+    background-color: rgb(214, 38, 38);
+}
+
+.actioncard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:180px;
+    height: 250px;
+    border: 5px solid black;
+    border-radius:  20px;
+    text-align: center;
+    font-size: 50px;
+    transition: all 0.5s;
+}
+
+.mycard:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 16px 18px 33px -8px rgba(48,48,48,0.7);
+    -webkit-box-shadow: 16px 18px 33px -8px rgba(48,48,48,0.7);
+    -moz-box-shadow: 16px 18px 33px -8px rgba(48,48,48,0.7);
+
+    .fa-hand{
+        animation: wave;
+        animation-duration: 1s;
+    }
+
+    .fa-hand-scissors{
+        animation: wave;
+        animation-duration: 1s;
+    }
+
+    .fa-hand-back-fist{
+        animation: wave;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes wave{
+    0% {transform: rotateZ(-15deg);}
+    25% {transform: rotateZ(15deg);}
+    50% {transform: rotateZ(-15deg);}
+    75% {transform: rotateZ(15deg);}
+    100% {transform: rotateZ(-0deg);}
+}
+
+@keyframes shakeshake{
+    0% {transform: rotateZ(0deg);}
+    25% {transform: rotateZ(5deg);}
+    50% {transform: rotateZ(0deg);}
+    75% {transform: rotateZ(-5deg);}
+    100% {transform: rotateZ(0deg);}
+}
+
+@media only screen and (max-width: 420px) {
+
+    .gameboard{
+        max-width:100vw;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius:  0;
+        background-color: bisque;
+        padding: 10px 0px;
+    } 
+
+    .actioncard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width:100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius:  50%;
+        text-align: center;
+        font-size: 30px;
+        transition: all 0.5s;
+    }
+
+    .enemycardcontainer{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    .mycardcontainer{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    .textcontainer{
+        width: 100%;
+        height: 20%;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .text{
+        width: 100%;
+    }
+}
