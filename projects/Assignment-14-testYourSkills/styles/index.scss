@@ -1,0 +1,50 @@
+@use 'colorsfonts';
+
+@import 'header';
+@import 'whyChooseUs';
+@import 'whatWeDo';
+@import 'travelWithUs';
+@import 'footer';
+
+p{
+    font-family: colorsfonts.$josefin;
+    color: colorsfonts.$alt-txtcolor;
+}
+
+h3{
+    font-family: colorsfonts.$aleo;
+    color: colorsfonts.$main-txtcolor;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h5, h4{
+    font-family: colorsfonts.$josefin;
+}
+
+.widthcontainer{
+    max-width: 1100px;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-self: center;
+}
+
+button{
+    background-color: colorsfonts.$main-pagecolor;
+    border-style: none;
+    color: colorsfonts.$main-txtcolor;
+    font-family: colorsfonts.$aleo;
+    font-size: 14px;
+    padding: 15px 20px 12px 20px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+
+button:hover{
+    background-color: colorsfonts.$hover-color;
+    color: colorsfonts.$bgcolor-dark;
+    cursor: pointer;
+    transition: all 0.5s;
+}

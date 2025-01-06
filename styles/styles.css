@@ -21,6 +21,15 @@
 .card{
     border: none;
 }
+
+.project-card:hover{
+    transform: translateY(-8px);
+    
+}
+
+.hide-text{
+    color: transparent;
+}
 .testimonial-card{
     height: 25rem;
 }
